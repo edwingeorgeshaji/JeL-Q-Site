@@ -1,0 +1,197 @@
+⠋ Training QAOA and sampling verified Qiskit circuits…⠙ Training QAOA and sampling verified Qiskit circuits…⠹ Training QAOA and sampling verified Qiskit circuits…⠸ Training QAOA and sampling verified Qiskit circuits…⠼ Training QAOA and sampling verified Qiskit circuits…⠴ Training QAOA and sampling verified Qiskit circuits…⠦ Training QAOA and sampling verified Qiskit circuits…⠇ Training QAOA and sampling verified Qiskit circuits…⠏ Training QAOA and sampling verified Qiskit circuits…
+
+    ██████╗         ███████╗ ██╗ ████████╗ ███████╗
+   ██╔═══██╗        ██╔════╝ ██║ ╚══██╔══╝ ██╔════╝
+   ██║   ██║ █████╗ ███████╗ ██║    ██║    █████╗
+   ██║▄▄ ██║ ╚════╝ ╚════██║ ██║    ██║    ██╔══╝
+   ╚██████╔╝        ███████║ ██║    ██║    ███████╗
+    ╚══▀▀═╝         ╚══════╝ ╚═╝    ╚═╝    ╚══════╝
+
+  Meet electricity demand at the lowest cost.
+  Qiskit simulation on this computer
+
+─────────────────────────────────────────────────────── Daytime ────────────────────────────────────────────────────────
+Electricity needed: 80 kWh
+
+Energy supplied by each source  (bar scale: 0–60 kWh)
+  Source                │  Energy chart                                                                │      Supplied  
+────────────────────────┼──────────────────────────────────────────────────────────────────────────────┼────────────────
+                        │                                                                              │                
+  Solar                 │  █████████████████████████████████████                                       │        30 kWh  
+  Wind                  │  █████████████████████████████████████                                       │        30 kWh  
+  Battery               │  █████████████████████████                                                   │        20 kWh  
+  Grid import           │                                                                              │         0 kWh  
+  Diesel                │                                                                              │         0 kWh  
+                        │                                                                              │                
+
+Cost comparison  (shorter bar = lower cost)
+  Method                │  Cost chart                                                                  │          Cost  
+────────────────────────┼──────────────────────────────────────────────────────────────────────────────┼────────────────
+                        │                                                                              │                
+  Classical             │  ██████████████████████████████████████████████████████████████████████████  │       INR 110  
+  Quantum-assisted      │  ██████████████████████████████████████████████████████████████████████████  │       INR 110  
+                        │                                                                              │                
+
+Demand coverage
+  Demand                │  Coverage chart                                                              │        Energy  
+────────────────────────┼──────────────────────────────────────────────────────────────────────────────┼────────────────
+                        │                                                                              │                
+  Needed                │  ──────────────────────────────────────────────────────────────────────────  │        80 kWh  
+  Supplied              │  ██████████████████████████████████████████████████████████████████████████  │        80 kWh  
+                        │                                                                              │                
+
+Demand met: 80 / 80 kWh. The costs match.
+
+──────────────────────────────────────────────────── AI load surge ─────────────────────────────────────────────────────
+Electricity needed: 120 kWh
+
+Energy supplied by each source  (bar scale: 0–60 kWh)
+  Source                │  Energy chart                                                                │      Supplied  
+────────────────────────┼──────────────────────────────────────────────────────────────────────────────┼────────────────
+                        │                                                                              │                
+  Solar                 │  █████████████████████████████████████                                       │        30 kWh  
+  Wind                  │  █████████████████████████████████████                                       │        30 kWh  
+  Battery               │  █████████████████████████████████████                                       │        30 kWh  
+  Grid import           │  █████████████████████████████████████                                       │        30 kWh  
+  Diesel                │                                                                              │         0 kWh  
+                        │                                                                              │                
+
+Cost comparison  (shorter bar = lower cost)
+  Method                │  Cost chart                                                                  │          Cost  
+────────────────────────┼──────────────────────────────────────────────────────────────────────────────┼────────────────
+                        │                                                                              │                
+  Classical             │  ██████████████████████████████████████████████████████████████████████████  │       INR 300  
+  Quantum-assisted      │  ██████████████████████████████████████████████████████████████████████████  │       INR 300  
+                        │                                                                              │                
+
+Demand coverage
+  Demand                │  Coverage chart                                                              │        Energy  
+────────────────────────┼──────────────────────────────────────────────────────────────────────────────┼────────────────
+                        │                                                                              │                
+  Needed                │  ──────────────────────────────────────────────────────────────────────────  │       120 kWh  
+  Supplied              │  ██████████████████████████████████████████████████████████████████████████  │       120 kWh  
+                        │                                                                              │                
+
+Demand met: 120 / 120 kWh. The costs match.
+
+────────────────────────────────────────────────── Capacity shortfall ──────────────────────────────────────────────────
+Demand: 160 kWh | Available: 150 kWh | Shortage: 10 kWh
+More energy capacity is needed.
+
+Illustrative one-hour scenarios. Quantum result is selected from simulated measurements; matching cost does not 
+establish a speed advantage.
+
+Optional: --details for technical charts | --scale for large-scale comparison
+───────────────────────────────────────────── PHASE 2 / Prototype evidence ─────────────────────────────────────────────
+This is an evidence checklist, not a predicted judging score.
+Mode: Fresh simulation and live checks.
+Scope: working one-hour allocation. Reserve, outage and recovery features remain planned.
+
+
+1. MVP functionality and completion / 25%
+  Evidence                  │  Result                                                  │  Meaning                       
+────────────────────────────┼──────────────────────────────────────────────────────────┼────────────────────────────────
+                            │                                                          │                                
+  Inputs                    │  Five sources; costs and demand in scenarios.json        │  Synthetic one-hour examples   
+  End-to-end path           │  Read inputs, solve, validate, display and save          │  Working allocation pipeline   
+  Capacity handling         │  Source output cannot exceed its encoded limit           │  Checked against input model   
+  Shortage case             │  160 kWh required; 150 kWh available                     │  Rejects an impossible         
+                            │                                                          │  request                       
+  Not delivered yet         │  Interactive inputs; reserve/outage/recovery             │  Do not present as complete    
+                            │                                                          │                                
+
+2. Quantum component / 25% / Daytime
+  Evidence                  │  Result                                                  │  Meaning                       
+────────────────────────────┼──────────────────────────────────────────────────────────┼────────────────────────────────
+                            │                                                          │                                
+  Actual quantum role       │  10 simulated qubits; Qiskit circuit sampling            │  Runs locally, no QPU          
+  Model                     │  QUBO = cost + P (supply - demand)^2                     │  Binary choices with           
+                            │                                                          │  penalties                     
+  Circuit verification      │  PASS: equivalent independent statevectors               │  Live check, even in replay    
+  Training                  │  3 QAOA layers; 6 angles; 3 starts                       │  NumPy simulation + COBYLA     
+  Measured valid shots      │  1598 / 4096 (39.0%)                                     │  Demand exactly met            
+  Measured optimal shots    │  12 / 4096 (0.29%)                                       │  Exact minimum cost measured   
+  Most frequent sample      │  80 kWh; valid = True                                    │  Separate from best sample     
+  Optimizer converged       │  False                                                   │  Budget exhaustion is visible  
+                            │                                                          │                                
+
+Classical comparison / Daytime
+  Evidence                  │  Result                                                  │  Meaning                       
+────────────────────────────┼──────────────────────────────────────────────────────────┼────────────────────────────────
+                            │                                                          │                                
+  Exact cost                │  INR 110                                                 │  Exhaustive encoded search     
+  Classical merit order     │  INR 110                                                 │  Cheapest sources first        
+  Best quantum sample       │  INR 110                                                 │  Only measured valid samples   
+  Cost gap                  │  0.0 INR                                                 │  Zero means matching cost      
+  Exact / greedy time       │  0.041 / 0.058 ms                                        │  Shared construction excluded  
+  Quantum workflow time     │  883.475 ms                                              │  Training + check + sampling   
+                            │                                                          │                                
+Single-run timings on this machine. Quantum speedup is not established; merit order already solves this linear model.
+
+2. Quantum component / 25% / AI load surge
+  Evidence                  │  Result                                                  │  Meaning                       
+────────────────────────────┼──────────────────────────────────────────────────────────┼────────────────────────────────
+                            │                                                          │                                
+  Actual quantum role       │  10 simulated qubits; Qiskit circuit sampling            │  Runs locally, no QPU          
+  Model                     │  QUBO = cost + P (supply - demand)^2                     │  Binary choices with           
+                            │                                                          │  penalties                     
+  Circuit verification      │  PASS: equivalent independent statevectors               │  Live check, even in replay    
+  Training                  │  3 QAOA layers; 6 angles; 3 starts                       │  NumPy simulation + COBYLA     
+  Measured valid shots      │  1130 / 4096 (27.6%)                                     │  Demand exactly met            
+  Measured optimal shots    │  35 / 4096 (0.85%)                                       │  Exact minimum cost measured   
+  Most frequent sample      │  150 kWh; valid = False                                  │  Separate from best sample     
+  Optimizer converged       │  False                                                   │  Budget exhaustion is visible  
+                            │                                                          │                                
+
+Classical comparison / AI load surge
+  Evidence                  │  Result                                                  │  Meaning                       
+────────────────────────────┼──────────────────────────────────────────────────────────┼────────────────────────────────
+                            │                                                          │                                
+  Exact cost                │  INR 300                                                 │  Exhaustive encoded search     
+  Classical merit order     │  INR 300                                                 │  Cheapest sources first        
+  Best quantum sample       │  INR 300                                                 │  Only measured valid samples   
+  Cost gap                  │  0.0 INR                                                 │  Zero means matching cost      
+  Exact / greedy time       │  0.016 / 0.053 ms                                        │  Shared construction excluded  
+  Quantum workflow time     │  846.362 ms                                              │  Training + check + sampling   
+                            │                                                          │                                
+Single-run timings on this machine. Quantum speedup is not established; merit order already solves this linear model.
+
+3. Technical implementation / 20%
+  Evidence                  │  Result                                                  │  Meaning                       
+────────────────────────────┼──────────────────────────────────────────────────────────┼────────────────────────────────
+                            │                                                          │                                
+  Core tests run now        │  4 run; 0 failures; 0 errors                             │  Actual execution, not a       
+                            │                                                          │  label                         
+  Measurement audit         │  PASS for displayed feasible scenarios                   │  Bitstrings, totals, selected  
+                            │                                                          │  cost                          
+  Input fingerprint         │  MATCH                                                   │  Fresh run recommended if      
+                            │                                                          │  stale                         
+  Evidence saved            │  results/phase2_evidence.json                            │  Checks and timing provenance  
+  Reproducibility           │  Seed 42; settings and counts in JSON                    │  One seed, not repeated        
+                            │                                                          │  trials                        
+                            │                                                          │                                
+
+4. Innovation and real-world impact / 15%
+  Evidence                  │  Result                                                  │  Meaning                       
+────────────────────────────┼──────────────────────────────────────────────────────────┼────────────────────────────────
+                            │                                                          │                                
+  Current contribution      │  Explained allocation + quantum validation               │  An educational prototype      
+  Proposed distinction      │  Price of reserve + verified recovery options            │  Requires implementation       
+  Intended users            │  Community facilities; campus energy teams               │  No live site validation yet   
+  Society / SDGs            │  Affordable energy (7); resilient infrastructure (9)     │  Relevance, not measured       
+                            │                                                          │  impact                        
+  Existing tools            │  REopt already supports energy/resilience planning       │  No superiority claim          
+                            │                                                          │                                
+
+5. Demo and presentation / 15%
+  Evidence                  │  Result                                                  │  Meaning                       
+────────────────────────────┼──────────────────────────────────────────────────────────┼────────────────────────────────
+                            │                                                          │                                
+  Demonstrate               │  80 kWh normal; 120 kWh surge; 160 kWh shortage          │  Explain sources, cost,        
+                            │                                                          │  balance                       
+  Explain quantum           │  Train angles; simulate circuit; check samples           │  Never claim all samples       
+                            │                                                          │  optimal                       
+  Compare honestly          │  Cost gap, valid-shot rate and measured times            │  Matching cost is not speedup  
+  Next completion gate      │  Implement reserve/outage/recovery tests                 │  Needed to fulfill the new     
+                            │                                                          │  idea                          
+                            │                                                          │                                

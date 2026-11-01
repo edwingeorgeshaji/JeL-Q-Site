@@ -1,0 +1,124 @@
+
+    ██████╗         ███████╗ ██╗ ████████╗ ███████╗
+   ██╔═══██╗        ██╔════╝ ██║ ╚══██╔══╝ ██╔════╝
+   ██║   ██║ █████╗ ███████╗ ██║    ██║    █████╗
+   ██║▄▄ ██║ ╚════╝ ╚════██║ ██║    ██║    ██╔══╝
+   ╚██████╔╝        ███████║ ██║    ██║    ███████╗
+    ╚══▀▀═╝         ╚══════╝ ╚═╝    ╚═╝    ╚══════╝
+
+ENERGY RESERVE & RECOVERY
+
+Compare electricity cost and battery backup during a power outage.
+
+Select an option
+
+  1. Run the example scenario
+
+  2. Enter your energy requirements
+
+⠋ Solving plans and training Qiskit circuits…⠙ Solving plans and training Qiskit circuits…⠹ Solving plans and training Qiskit circuits…⠸ Solving plans and training Qiskit circuits…⠼ Solving plans and training Qiskit circuits…⠴ Solving plans and training Qiskit circuits…⠧ Solving plans and training Qiskit circuits…⠇ Solving plans and training Qiskit circuits…⠏ Solving plans and training Qiskit circuits…⠋ Solving plans and training Qiskit circuits…⠙ Solving plans and training Qiskit circuits…⠹ Solving plans and training Qiskit circuits…⠼ Solving plans and training Qiskit circuits…⠴ Solving plans and training Qiskit circuits…⠦ Solving plans and training Qiskit circuits…⠧ Solving plans and training Qiskit circuits…⠇ Solving plans and training Qiskit circuits…⠋ Solving plans and training Qiskit circuits…⠙ Solving plans and training Qiskit circuits…⠹ Solving plans and training Qiskit circuits…⠸ Solving plans and training Qiskit circuits…⠼ Solving plans and training Qiskit circuits…⠦ Solving plans and training Qiskit circuits…⠧ Solving plans and training Qiskit circuits…⠇ Solving plans and training Qiskit circuits…⠏ Solving plans and training Qiskit circuits…⠋ Solving plans and training Qiskit circuits…⠙ Solving plans and training Qiskit circuits…⠸ Solving plans and training Qiskit circuits…⠼ Solving plans and training Qiskit circuits…⠴ Solving plans and training Qiskit circuits…⠦ Solving plans and training Qiskit circuits…⠧ Solving plans and training Qiskit circuits…⠏ Solving plans and training Qiskit circuits…⠋ Solving plans and training Qiskit circuits…⠙ Solving plans and training Qiskit circuits…⠹ Solving plans and training Qiskit circuits…⠸ Solving plans and training Qiskit circuits…⠼ Solving plans and training Qiskit circuits…⠴ Solving plans and training Qiskit circuits…⠧ Solving plans and training Qiskit circuits…⠇ Solving plans and training Qiskit circuits…⠏ Solving plans and training Qiskit circuits…⠋ Solving plans and training Qiskit circuits…⠙ Solving plans and training Qiskit circuits…⠸ Solving plans and training Qiskit circuits…⠼ Solving plans and training Qiskit circuits…⠴ Solving plans and training Qiskit circuits…⠦ Solving plans and training Qiskit circuits…⠧ Solving plans and training Qiskit circuits…⠇ Solving plans and training Qiskit circuits…⠋ Solving plans and training Qiskit circuits…⠙ Solving plans and training Qiskit circuits…⠹ Solving plans and training Qiskit circuits…⠸ Solving plans and training Qiskit circuits…⠼ Solving plans and training Qiskit circuits…⠦ Solving plans and training Qiskit circuits…⠧ Solving plans and training Qiskit circuits…⠇ Solving plans and training Qiskit circuits…⠏ Solving plans and training Qiskit circuits…⠋ Solving plans and training Qiskit circuits…⠙ Solving plans and training Qiskit circuits…⠹ Solving plans and training Qiskit circuits…
+New simulation
+
+YOUR SITUATION
+
+  Normal hour: 80 kWh needed
+
+  Power cut: 30 kWh needed for essential services
+
+  Battery starts with 30 kWh stored
+
+During the power cut: solar 0, wind 0, generator 0 kWh available.
+Battery delivery limit: 30 kWh per hour. No charging between hours.
+
+                                     │                         │                                    
+  Plan                               │  Cost before power cut  │  During power cut                  
+                                     │                         │                                    
+─────────────────────────────────────┼─────────────────────────┼────────────────────────────────────
+                                     │                         │                                    
+  Spend less now                     │  INR 110                │  10 of 30 kWh supplied             
+                                     │                         │  Short by 20 kWh                   
+                                     │                         │                                    
+                                     │                         │                                    
+  Save battery for later             │  INR 170                │  30 of 30 kWh supplied             
+                                     │                         │  All essential energy supplied     
+                                     │                         │                                    
+
+ENERGY PRICES AND COST CALCULATIONS
+
+Source costs are calculated from the energy allocation and the listed rate.
+
+
+Spend less now
+
+                      │                      │                     │                                          
+  Source              │  Energy              │  Rate / 10 kWh      │  Cost calculation / INR                  
+                      │                      │                     │                                          
+──────────────────────┼──────────────────────┼─────────────────────┼──────────────────────────────────────────
+                      │                      │                     │                                          
+  Solar               │  30 kWh              │  INR 8              │  3 x 8 = 24                              
+                      │                      │                     │                                          
+                      │                      │                     │                                          
+  Wind                │  30 kWh              │  INR 12             │  3 x 12 = 36                             
+                      │                      │                     │                                          
+                      │                      │                     │                                          
+  Battery             │  20 kWh              │  INR 25             │  2 x 25 = 50                             
+                      │                      │                     │                                          
+                      │                      │                     │                                          
+  Grid import         │  0 kWh               │  INR 55             │  0 x 55 = 0                              
+                      │                      │                     │                                          
+                      │                      │                     │                                          
+  Diesel              │  0 kWh               │  INR 75             │  0 x 75 = 0                              
+                      │                      │                     │                                          
+                      │                      │                     │                                          
+  TOTAL               │  80 kWh              │                     │  INR 110                                 
+                      │                      │                     │                                          
+
+Save battery for later
+
+                      │                      │                     │                                          
+  Source              │  Energy              │  Rate / 10 kWh      │  Cost calculation / INR                  
+                      │                      │                     │                                          
+──────────────────────┼──────────────────────┼─────────────────────┼──────────────────────────────────────────
+                      │                      │                     │                                          
+  Solar               │  30 kWh              │  INR 8              │  3 x 8 = 24                              
+                      │                      │                     │                                          
+                      │                      │                     │                                          
+  Wind                │  30 kWh              │  INR 12             │  3 x 12 = 36                             
+                      │                      │                     │                                          
+                      │                      │                     │                                          
+  Battery             │  0 kWh               │  INR 25             │  0 x 25 = 0                              
+                      │                      │                     │                                          
+                      │                      │                     │                                          
+  Grid import         │  20 kWh              │  INR 55             │  2 x 55 = 110                            
+                      │                      │                     │                                          
+                      │                      │                     │                                          
+  Diesel              │  0 kWh               │  INR 75             │  0 x 75 = 0                              
+                      │                      │                     │                                          
+                      │                      │                     │                                          
+  TOTAL               │  80 kWh              │                     │  INR 170                                 
+                      │                      │                     │                                          
+
+These are illustrative normal-hour operating costs, excluding equipment purchase and installation. The allocations above are the exact classical plans; 
+quantum samples are compared below.
+
+
+WHICH PLAN KEEPS ESSENTIAL SERVICES POWERED?
+
+  Spend less now     ██████████░░░░░░░░░░░░░░░░░░░░  10/30 kWh
+
+  Save for later     ██████████████████████████████  30/30 kWh
+
+Saving battery costs INR 60 extra before the power cut.
+
+Another tested option: start with 20 kWh more battery energy.
+This fixes the first plan in this example; buying that capacity is not priced.
+
+QUANTUM CHECK
+
+6 of 6 simulated runs measured a valid allocation matching the exact classical cost.
+
+We select the best valid measured sample. This does not show a speed advantage.
+Synthetic two-hour example. Complete measurements are saved in results/resilience.json.
+
+More detail: python dashboard.py --advanced --cached
+

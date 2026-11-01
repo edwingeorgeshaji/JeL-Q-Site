@@ -1,0 +1,4 @@
+scenario,demand_kwh,status,exact_cost_inr,qaoa_cost_inr,gap_inr,optimal_probability,uniform_optimal_probability
+Daytime,80,solved,110.0,110.0,0.0,0.0025159827739078965,0.0009765625
+AI load surge,120,solved,300.0,300.0,0.0,0.008346685604206356,0.0009765625
+Capacity shortfall,160,infeasible,,,,,

@@ -1,0 +1,33 @@
+{
+  "machine": "Windows-11-10.0.26300-SP0",
+  "benchmark": [
+    {
+      "sources": 5,
+      "demand_kwh": 90,
+      "cost_inr": 135.0,
+      "median_ms": 0.0073999999585794285,
+      "remaining_blocks": 0
+    },
+    {
+      "sources": 50,
+      "demand_kwh": 900,
+      "cost_inr": 1350.0,
+      "median_ms": 0.00940000063565094,
+      "remaining_blocks": 0
+    },
+    {
+      "sources": 500,
+      "demand_kwh": 9000,
+      "cost_inr": 13500.0,
+      "median_ms": 0.09080000018002465,
+      "remaining_blocks": 0
+    },
+    {
+      "sources": 5000,
+      "demand_kwh": 90000,
+      "cost_inr": 135000.0,
+      "median_ms": 1.3811999997415114,
+      "remaining_blocks": 0
+    }
+  ]
+}

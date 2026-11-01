@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="780" viewBox="0 0 1120 780" role="img" aria-label="JeL energy dispatch results">
+<rect width="1120" height="780" fill="#f6f5ef"/>
+<style>text{font-family:Arial,sans-serif;fill:#192c35} .small{font-size:14px} .label{font-size:18px}</style>
+<text x="50" y="55" font-size="30" font-weight="bold">JeL / Q-SITE</text>
+<text x="50" y="86" class="label">Energy dispatch · fresh local QAOA simulation</text>
+<rect x="50" y="115" width="13" height="13" fill="#e6aa24"/>
+<text x="71" y="127" class="small">Solar</text>
+<rect x="260" y="115" width="13" height="13" fill="#238c82"/>
+<text x="281" y="127" class="small">Wind</text>
+<rect x="470" y="115" width="13" height="13" fill="#6574c4"/>
+<text x="491" y="127" class="small">Battery</text>
+<rect x="680" y="115" width="13" height="13" fill="#39759d"/>
+<text x="701" y="127" class="small">Grid import</text>
+<rect x="890" y="115" width="13" height="13" fill="#bc5d52"/>
+<text x="911" y="127" class="small">Diesel</text>
+<text x="50" y="180" class="label" font-weight="bold">Daytime / Demand 80 kWh</text>
+<text x="50" y="220" class="small">Exact</text>
+<rect x="210" y="200" width="120" height="28" fill="#e6aa24"/>
+<text x="215" y="219" font-size="13" style="fill:white">30</text>
+<rect x="330" y="200" width="120" height="28" fill="#238c82"/>
+<text x="335" y="219" font-size="13" style="fill:white">30</text>
+<rect x="450" y="200" width="80" height="28" fill="#6574c4"/>
+<text x="455" y="219" font-size="13" style="fill:white">20</text>
+<text x="545" y="220" class="small">INR 110</text>
+<text x="50" y="259" class="small">QAOA best sample</text>
+<rect x="210" y="239" width="120" height="28" fill="#e6aa24"/>
+<text x="215" y="258" font-size="13" style="fill:white">30</text>
+<rect x="330" y="239" width="120" height="28" fill="#238c82"/>
+<text x="335" y="258" font-size="13" style="fill:white">30</text>
+<rect x="450" y="239" width="80" height="28" fill="#6574c4"/>
+<text x="455" y="258" font-size="13" style="fill:white">20</text>
+<text x="545" y="259" class="small">INR 110</text>
+<text x="50" y="305" class="small">Optimal-state probability 0.25% · uniform 0.10% · feasible shots 1580/4096</text>
+<text x="50" y="355" class="label" font-weight="bold">AI load surge / Demand 120 kWh</text>
+<text x="50" y="395" class="small">Exact</text>
+<rect x="210" y="375" width="120" height="28" fill="#e6aa24"/>
+<text x="215" y="394" font-size="13" style="fill:white">30</text>
+<rect x="330" y="375" width="120" height="28" fill="#238c82"/>
+<text x="335" y="394" font-size="13" style="fill:white">30</text>
+<rect x="450" y="375" width="120" height="28" fill="#6574c4"/>
+<text x="455" y="394" font-size="13" style="fill:white">30</text>
+<rect x="570" y="375" width="120" height="28" fill="#39759d"/>
+<text x="575" y="394" font-size="13" style="fill:white">30</text>
+<text x="705" y="395" class="small">INR 300</text>
+<text x="50" y="434" class="small">QAOA best sample</text>
+<rect x="210" y="414" width="120" height="28" fill="#e6aa24"/>
+<text x="215" y="433" font-size="13" style="fill:white">30</text>
+<rect x="330" y="414" width="120" height="28" fill="#238c82"/>
+<text x="335" y="433" font-size="13" style="fill:white">30</text>
+<rect x="450" y="414" width="120" height="28" fill="#6574c4"/>
+<text x="455" y="433" font-size="13" style="fill:white">30</text>
+<rect x="570" y="414" width="120" height="28" fill="#39759d"/>
+<text x="575" y="433" font-size="13" style="fill:white">30</text>
+<text x="705" y="434" class="small">INR 300</text>
+<text x="50" y="480" class="small">Optimal-state probability 0.83% · uniform 0.10% · feasible shots 1082/4096</text>
+<text x="50" y="530" class="label" font-weight="bold">Capacity shortfall / Demand 160 kWh</text>
+<text x="50" y="570" class="label">INFEASIBLE: capacity 150 kWh; no allocation can meet demand.</text>
+<text x="50" y="728" class="small">Synthetic one-hour scenarios. Battery starts charged. Bar labels: kWh. No quantum speedup claim.</text>
+<text x="50" y="754" class="small">QAOA result uses lowest-cost feasible measured sample; the modal sample is separately reported in JSON.</text>
+</svg>

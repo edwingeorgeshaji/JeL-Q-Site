@@ -1,0 +1,14 @@
+__pycache__/
+.venv/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+qiskit-ibm.json
+tmp/
+.slides-build/
+.deck-build/*
+!.deck-build/*.mjs
+output/slides/.*.validated
+~$*

@@ -1,0 +1,30 @@
+{
+  "scope": "One-hour allocation; extended resilience features planned",
+  "cached_measurements": false,
+  "scenarios": [
+    {
+      "scenario": "Daytime",
+      "counts_audit": {
+        "feasible_shots": 1598,
+        "optimal_shots": 12,
+        "shots": 4096
+      },
+      "circuit_equivalent": true,
+      "inputs_match_current_file": true,
+      "measurement_generated_utc": "2026-11-01T09:02:40.874476+00:00"
+    },
+    {
+      "scenario": "AI load surge",
+      "counts_audit": {
+        "feasible_shots": 1130,
+        "optimal_shots": 35,
+        "shots": 4096
+      },
+      "circuit_equivalent": true,
+      "inputs_match_current_file": true,
+      "measurement_generated_utc": "2026-11-01T09:02:41.759150+00:00"
+    }
+  ],
+  "tests_run": 4,
+  "tests_passed": true
+}

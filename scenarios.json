@@ -1,0 +1,16 @@
+{
+  "description": "Synthetic one-hour microgrid dispatch; illustrative INR, not measured tariffs. Each block is 10 kWh. Battery starts with 30 kWh usable energy; charging is outside this horizon.",
+  "block_kwh": 10,
+  "sources": [
+    {"name": "Solar", "cost_per_block_inr": 8, "weights": [1, 2]},
+    {"name": "Wind", "cost_per_block_inr": 12, "weights": [1, 2]},
+    {"name": "Battery", "cost_per_block_inr": 25, "weights": [1, 2]},
+    {"name": "Grid import", "cost_per_block_inr": 55, "weights": [1, 2]},
+    {"name": "Diesel", "cost_per_block_inr": 75, "weights": [1, 2]}
+  ],
+  "scenarios": [
+    {"name": "Daytime", "demand_kwh": 80},
+    {"name": "AI load surge", "demand_kwh": 120},
+    {"name": "Capacity shortfall", "demand_kwh": 160}
+  ]
+}
