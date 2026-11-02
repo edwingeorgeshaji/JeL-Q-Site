@@ -34,3 +34,5 @@ To replay saved results:
 ```bash
 python dashboard.py --cached
 ```
+
+Developed by [Edwin George Shaji](https://www.linkedin.com/in/edwingeorgeshaji/), [Joswin Joshy](https://www.linkedin.com/in/joswin-joshy-8948b9326/), and [Layel K Manoj](https://www.linkedin.com/in/layelkmanoj/).
